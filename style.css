@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+body, h4, ul {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.ab{
+     position: fixed;
+     top: 50px;
+     right: 0;
+}
+.item {
+    background-color: #212121;
+    height: 470px;
+    width: 470px;
+    margin: 10px;
+    font-size: 50px;
+    padding: 0px;
+    border-radius: 20px;
+    position: sticky;
+  }
+  button{
+    color: brown;
+    background-color: #F6F8EA;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+  .containers {
+    margin-top: 300px;
+    background-color:#F6F8EA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+.container {
+    position: relative;
+    background-color: #F6F8EA;
+    background-size: cover;
+}
+
+body{
+    background-image: url('restaurant.avif');
+    background-size:cover;
+}
+.social-media-list {
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+
+.social-media-list li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust as needed */
+}
+p{
+    color: #eec69f;
+    font-size: 1cm;
+    padding: 20px;
+    margin: 20px;
+    background-color:#212121;
+    position: sticky;
+}
+
+h1{
+    margin-left: 0px;
+    background-color: #212121;
+    font-family:Kalam ;
+    color: antiquewhite;
+}
+h4 {
+    text-align: center;
+    margin-top: 10px; /* Reset default margin */
+    font-family:Rajdhani ;
+    background-color: #F6F8EA;
+    background-size: cover;
+}
