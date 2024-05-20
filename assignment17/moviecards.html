@@ -1,116 +1,143 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
-    
-    <title>Document17</title>
-</head>
-<style>
-    body{
-      background-color: #001E4D;
-    }
-    .item{
-    
-    color: white;
-    position: sticky;
-    text-align: left;
-}
- .card {
-        background-color:#46597C;
-        height: 550px;
-        width: 300px;
-        margin: 10px;
-        font-size: 25px;
-        padding: 20px;
-        border-radius: 10px;
-        color: #fff;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie cards</title>
+    <style>
+      body{
+        background-color: #001e4d;
+      }
+        .container{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+        }
+        .card{
+            margin: 20px;
+            padding: 10px;
+            background-color: #46597c;
+            height: 800px;
+            width: 300px;
+            padding: 0 10px;
+            border-radius: 20px;
+        }
+        .card:hover{
+            box-shadow: 0px 10px 10px 0px #271e87
+        }
+        img{
+            border-radius: 5%;
+            margin-top: 10px;
+        }
+        #img1{
+            border-radius: 100px;
+            margin-top: -35px;
+            margin-left: 230px;
+        }
+        #a{
+            margin-top: -90px;
+            margin-left: 20px;
+        }
+        @media screen  and (max-width:600px){
+            .container {
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+            }
         
-      }
-      .item ab{
-        text-align: right;
-      }
-      
-      .container {
-        height: 600px;
+            .card{
+                width: 150px;
+                height:300px
+        }
+    }
+  
+  @media screen and (min-width: 601px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .card {
+        width: 400px;
+    }
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .container {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        flex-direction: center;
-        flex: space-evenly;
-        background-color:#1E2747;
-        padding: 5px;
-        border-radius: 5px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-      }
-      .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        margin-bottom: 50px;
-        background-color:black;
-        color: #fff;
-        font-size: 16px;
-        border: none;
-        border-radius: 5px;
-    
+    .card {
+        justify-content: space-between;
+        margin-left: 40px;
     }
-    .movie-description {
-        font-size: 16px;
-        color: whitesmoke;
+}
+
+@media screen and (min-width:993px) and (max-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
     }
-    .movie-rating {
-        font-size: 14px; 
-        color: #888;
-        margin-top: 10px;
-        text-align: right;
-        color: tomato;
+
+    .card {
+        margin: 20px;
+        justify-content: space-between;
     }
-</style>
+}
+    </style>
+</head>
 <body>
-    <h1 class="item"><img src="images.jpeg" height="50px" style="border-radius: 50%;"><span class="ab">Movies&nbsp;&nbsp;&nbsp;&nbsp;Series</span></h1><br/>
     
-    <div class="container">
-    <div class="card"><img src="summer.jpg" height="250px" width="300px">
-      <b> The Summer I Turned Pretty </b>
+ <div class="container">
+  <div class="card"><img src="summer.jpg" height="250px" width="300px">
+    <b> The Summer I Turned Pretty </b>
+    <p class="movie-description"><b>Rom-Com</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>2hr30mins</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>23k &nbsp;<img src="heart.png" height="20px"></b><br>
+      A girl is caught in a love triangle between two brothers as she deals with her first love and first heartbreak during the perfect summer.</p>
+    <p class="movie-rating">
+      <img src="rating.png" height="80px"><b>9.1</b></p>
+    <button class="btn">Watch Now</button>
+  </div>
+  
+      <div class="card"><img src="idea.png" height="250px"width=300px/>
+      <b>The idea of you </b>
       <p class="movie-description"><b>Rom-Com</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>2hr30mins</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>23k &nbsp;<img src="heart.png" height="20px"></b><br>
-
         A girl is caught in a love triangle between two brothers as she deals with her first love and first heartbreak during the perfect summer.</p>
       <p class="movie-rating">
         <img src="rating.png" height="80px"><b>9.1</b></p>
-      <button class="btn">Watch Now</button>
-    </div>
+    <button class="btn">Watch Now</button>
+  </div>
+          
+      
+       <div class="card"><img src="ps-canva-Maxton-Hall-.webp" height="250px"width=300px/>
+          <b>Maxton Hall</b>
+          <p class="movie-description"><b>Rom-Com</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>2hr30mins</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>23k &nbsp;<img src="heart.png" height="20px"></b><br>
+            A girl is caught in a love triangle between two brothers as she deals with her first love and first heartbreak during the perfect summer.</p>
+          <p class="movie-rating">
+            <img src="rating.png" height="80px"><b>9.1</b></p>
+    <button class="btn">Watch Now</button>
+      </div>
+       
+          
+            <div class="card"><img src="culpamia.jpg" height="250px"width=300px/>
+               <b>CulpaMia</b>
+               <p class="movie-description"><b>Rom-Com</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>2hr30mins</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>23k &nbsp;<img src="heart.png" height="20px"></b><br>
+                A girl is caught in a love triangle between two brothers as she deals with her first love and first heartbreak during the perfect summer.</p>
+              <p class="movie-rating">
+                <img src="rating.png" height="80px"><b>9.1</b></p>
+               <button class="btn">Watch Now</button>
+              </div> 
+              </div>
+
     
-        <div class="card"><img src="idea.png" height="250px"width=300px/>
-        <b>The idea of you </b>
-        <p class="movie-description"><b>Rom-Com</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>2hr30mins</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>23k &nbsp;<img src="heart.png" height="20px"></b><br>
-
-          A girl is caught in a love triangle between two brothers as she deals with her first love and first heartbreak during the perfect summer.</p>
-        <p class="movie-rating">
-          <img src="rating.png" height="80px"><b>9.1</b></p>
-      <button class="btn">Watch Now</button>
-    </div>
-            
-        
-         <div class="card"><img src="ps-canva-Maxton-Hall-.webp" height="250px"width=300px/>
-            <b>Maxton Hall</b>
-            <p class="movie-description"><b>Rom-Com</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>2hr30mins</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>23k &nbsp;<img src="heart.png" height="20px"></b><br>
-
-              A girl is caught in a love triangle between two brothers as she deals with her first love and first heartbreak during the perfect summer.</p>
-            <p class="movie-rating">
-              <img src="rating.png" height="80px"><b>9.1</b></p>
-      <button class="btn">Watch Now</button>
-        </div>
-         
-            
-              <div class="card"><img src="culpamia.jpg" height="250px"width=300px/>
-                 <b>CulpaMia</b>
-                 <p class="movie-description"><b>Rom-Com</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>2hr30mins</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>23k &nbsp;<img src="heart.png" height="20px"></b><br>
-
-                  A girl is caught in a love triangle between two brothers as she deals with her first love and first heartbreak during the perfect summer.</p>
-                <p class="movie-rating">
-                  <img src="rating.png" height="80px"><b>9.1</b></p>
-                 <button class="btn">Watch Now</button>
-                </div> 
-                </div>
+   
 </body>
-  
-
 </html>
