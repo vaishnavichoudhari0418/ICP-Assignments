@@ -22,6 +22,8 @@
             width: 300px;
             padding: 0 10px;
             border-radius: 20px;
+            align-items: center;
+
         }
         .card:hover{
             box-shadow: 0px 10px 10px 0px #271e87
@@ -35,64 +37,8 @@
             margin-top: -35px;
             margin-left: 230px;
         }
-        #a{
-            margin-top: -90px;
-            margin-left: 20px;
-        }
-        @media screen  and (max-width:600px){
-            .container {
-                flex-direction: column;
-                display: flex;
-                align-items: center;
-            }
-        
-            .card{
-                width: 150px;
-                height:300px
-        }
-    }
-  
-  @media screen and (min-width: 601px) and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-    }
-
-    .card {
-        width: 400px;
-    }
-}
 
 
-
-@media screen and (min-width: 769px) and (max-width: 992px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .card {
-        justify-content: space-between;
-        margin-left: 40px;
-    }
-}
-
-@media screen and (min-width:993px) and (max-width: 1200px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .card {
-        margin: 20px;
-        justify-content: space-between;
-    }
-}
     </style>
 </head>
 <body>
