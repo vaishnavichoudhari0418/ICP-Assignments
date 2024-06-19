@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ladder</title>
+</head>
+<body>
+    <script>
+        
+  //without boundary conditions
+  document.write("Without boundary condition");
+  let per = parseInt(prompt('Enter the Percentage'));
+  if(per >= 90){
+    document.write("Your Grade is A");
+  }
+  else if(per >= 80){
+    document.write("Your Grade is B");
+  }
+  else if(per >= 70){
+    document.write("Your Grade is c");
+  }
+  else if(per >= 60){
+    document.write("Your Grade is D")
+  } 
+  else if(per >= 50){
+    document.write("Your Grade is E")
+  } 
+  else{
+    document.write("Your are Fail");
+  } 
+//with boundary conditions
+  document.write("With boundary condition");
+  let perc = parseInt(prompt('Enter the Percentage'));
+
+  if(perc >= 90 && perc<=100){
+    document.write("Your Grade is A");
+  }
+  else if(perc >= 80 && perc<=90){
+    document.write("Your Grade is B");
+  }
+  else if(perc >= 70 && perc<=80){
+    document.write("Your Grade is c");
+  }
+  else if(perc >= 60 && perc<=70){
+    document.write("Your Grade is D")
+  } 
+  else if(perc >= 50 && perc<=60){
+    document.write("Your Grade is E")
+  } 
+  else{
+    document.write("Your are Fail");
+  } 
+
+
+    </script>
+    
+</body>
+</html>
